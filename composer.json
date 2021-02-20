@@ -1,0 +1,10 @@
+{
+    "name": "root/payscribe",
+    "require": {
+        "vlucas/phpdotenv": "^5.3"
+    },
+
+        "autoload": {
+            "classmap": ["main.php"]
+        }
+}
