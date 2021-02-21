@@ -6,5 +6,6 @@
 
         "autoload": {
             "classmap": ["main.php"]
-        }
+        },
+    "minimum-stability": "dev"
 }
