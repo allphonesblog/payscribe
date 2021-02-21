@@ -9,6 +9,9 @@
     #with composer
     composer require geezywap/payscribe
     
+if you are having composer error add this below to your composer.json and restart installation.
+"minimum-stability": "dev"
+
 # [Usage]
 Add configurations to .env file
 `PAYSCRIBE_KEY=apikey`
