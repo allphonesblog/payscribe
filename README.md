@@ -9,9 +9,11 @@
     #with composer
     composer require geezywap/payscribe
     
-Follow this link below  to on how to install composer
+How to install composer ? click this link  https://getcomposer.org/
 
- https://getcomposer.org/
+
+ 
+ 
 if you are having composer error add this below to your composer.json and restart installation.
 "minimum-stability": "dev"
 
