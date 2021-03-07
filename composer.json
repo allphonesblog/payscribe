@@ -1,9 +1,7 @@
 {
     "name": "geezywap/payscribe",
   
- "replace": {
-   "vlucas/phpdotenv":"^4.0"  
- },
+
         "autoload": {
             "classmap": ["main.php"]
         },
