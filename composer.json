@@ -1,7 +1,7 @@
 {
     "name": "geezywap/payscribe",
   
- "require": {
+ "replace": {
    "vlucas/phpdotenv":"^4.0"  
  },
         "autoload": {
