@@ -96,7 +96,7 @@ if($path == "account"){
     static function ValidateCard($type,$no){
         $data =["multichoice_type"=>$type,"smart_card_no"=>$no];
 
-        $url = "multichoice/validate";
+        $url = "validate/multichoice";
         return self::sendreq($data,$url,$_ENV['PAYSCRIBE_KEY']);
     }
     
