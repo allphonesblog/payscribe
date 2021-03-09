@@ -112,8 +112,8 @@ if($path == "account"){
         return self::sendreq($data,$url,$_ENV['PAYSCRIBE_KEY']);
     }
     
-    static function StartimesValidate($no){
-        $data =["smart_card_no"=>$no];
+    static function StartimesValidate($no,$amount){
+        $data =["account"=>$no,"amount"=>$amount];
 
         $url = "startimes/validate";
         return self::sendreq($data,$url,$token);
