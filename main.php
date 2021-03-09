@@ -100,15 +100,12 @@ if($path == "account"){
         return self::sendreq($data,$url,$_ENV['PAYSCRIBE_KEY']);
     }
     
-    static function MultichoicePay($type,$no,$amount,$pcode,$Pcode,$phone,$name,$tid){
-        $data =["multichoice_type"=>$type,
-                "smart_card_no"=>$no,
-                "amount"=>$amount,
-                "product_code"=>$pcode,
-                "productCode"=>$Pcode,
-                "phone_number"=>$phone,
-                "customer_name"=>$name,
-                "transaction_id"=>$tid
+    static function MultichoicePay($plan,$code,$phone,$token,$trans_id){
+        $data =["plan"=>$plan,
+                "productCode"=>$code,
+                "phone"=>$phone,
+                "productToken"=>$token,
+                "trans_id"=>$trans_id 
                ];
 
         $url = "multichoice/vend";
