@@ -116,7 +116,7 @@ if($path == "account"){
         $data =["account"=>$no,"amount"=>$amount];
 
         $url = "startimes/validate";
-        return self::sendreq($data,$url,$token);
+        return self::sendreq($data,$url,$_ENV['PAYSCRIBE_KEY']);
     }
     
     static function StartimesVend($no,$amount,$pcode,$Pcode,$phone,$name,$tid){
