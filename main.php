@@ -164,8 +164,8 @@ if($path == "account"){
 
     
     
-    static function ElectricityVend($productCode,$productToken){
-        $data =["productCode"=>$productCode,"productToken"=>$productToken];
+    static function ElectricityVend($productCode,$productToken,$phone){
+        $data =["productCode"=>$productCode,"productToken"=>$productToken,"phone"=>$phone];
 
         $url = "electricity/vend";
         return self::sendreq($data,$url,$_ENV['PAYSCRIBE_KEY']);
@@ -174,6 +174,3 @@ if($path == "account"){
 
 
 }
-
- 
-
